@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="bg-teal-700 text-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex shrink-0 items-center">
+                        <img class="h-10 w-auto" src="./WhatsApp_Image_2025-06-10_at_19.10.29-removebg-preview.png"
+                            alt="Leizure Guru">
+                        <h1 class="text-2xl text-amber-200"><b>Leizure Guru</b></h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">About
+                                us</a>
+                            <a href="./destintion.html"
+                                class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Destinations</a>
+                            <a href="./package.html"
+                                class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Packages</a>
+                            <a href=""
+                                class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Booking</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+
+                    <!-- Profile -->
+                    <div class="relative ml-3">
+                        <div>
+                            <a href="contact.html"><i class="fa-solid fa-user fa-2x bg-dark"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">Home</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About
+                    Us</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Destination</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Packages</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Bookings</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <section class="relative h-[400px] bg-cover bg-center bg-no-repeat" style="background-image: url('./bg.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Explore Our Travel Destinations</h1>
+                <p class="text-lg md:text-xl">Discover your next adventure with us</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Destinations -->
+    <section class="max-w-6xl mx-auto px-4 py-8 grid gap-4 sm:grid-cols-8 lg:grid-cols-3">
+
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./maldives.webp" alt="Maldives" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Maldives</h3>
+                    <p class="text-sm mt-1">An island nation in the Indian Ocean, southwest of India and Sri Lanka. They
+                        are known for their pristine coral islands, crystal-clear turquoise waters, and vibrant marine
+                        life.</p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./goa.jpg" alt="Goa" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Goa</h3>
+                    <p class="text-sm mt-1">A vibrant state in western India, known for its stunning beaches, Portuguese
+                        colonial history, and diverse culture. It's a popular tourist destination, attracting visitors
+                        with its relaxed atmosphere. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./bali.jpg" alt="Bali" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Bali</h3>
+                    <p class="text-sm mt-1">Bali, often called the "Island of Gods," is a vibrant Indonesian island
+                        known for its diverse landscapes, rich culture, and spiritual traditions. It's a popular
+                        destination, offering stunning beaches.
+                    </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+        
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./manali.webp" alt="Manali" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Manali</h3>
+                    <p class="text-sm mt-1">Manali is a high-altitude Himalayan resort town in India’s northern Himachal
+                        Pradesh state. It has a reputation as a backpacking center and honeymoon destination.</p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./munnar.webp" alt="Munnar" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Munnar</h3>
+                    <p class="text-sm mt-1">A picturesque hill station nestled in the Western Ghats of Kerala, India,
+                        renowned for its lush greenery, rolling hills, and sprawling tea plantations. Situated at an
+                        altitude of approximately 1,600 meters above. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+        
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./dubai.avif" alt="Dubai" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Dubai</h3>
+                    <p class="text-sm mt-1">Located on the eastern coast of the Arabian Peninsula in the southwest
+                        corner of the Arabian Gulf. Dubai is the second largest emirate in the United Arab Emirates
+                        (UAE).</p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./singapore.cms" alt="Singapore" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Singapore</h3>
+                    <p class="text-sm mt-1">A vibrant and modern city-state located at the southern tip of the Malay
+                        Peninsula in Southeast Asia, known for its clean and efficient infrastructure, diverse culture,
+                        and bustling economy. It's a major trading hub, a global financial center, and a popular tourist
+                        destination. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+        
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./switzerland.png" alt="Switzerland"
+                    class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Switzerland</h3>
+                    <p class="text-sm mt-1">A landlocked country in West and Central Europe, known for its stunning
+                        natural beauty, including the Alps, pristine lakes, and picturesque villages. It's a diverse
+                        country with four national languages (German, French, Italian, and Romansh) and a rich cultural
+                        heritage. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./georgia.jpg" alt="Georgia" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Georgia</h3>
+                    <p class="text-sm mt-1">The country of Georgia is located in the Caucasus, bordering Russia, Turkey,
+                        Armenia, and Azerbaijan, and is generally considered part of Europe. The U.S. state of Georgia
+                        is located in the southeastern United States, bordering Tennessee, North Carolina, South
+                        Carolina, Florida, and Alabama. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./andaman.jpg" alt="Andaman Islands"
+                    class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Andaman</h3>
+                    <p class="text-sm mt-1">Pristine beaches and vibrant marine life to rich colonial history and unique
+                        cultural heritage. Incredible India describes the islands as a tropical paradise, blending
+                        unperturbed serenity with lively beaches and delicious seafood.</p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+        
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./delhi.webp" alt="Switzerland" class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Delhi</h3>
+                    <p class="text-sm mt-1">A vibrant capital city offering a diverse blend of history, culture, and
+                        modernity, making it a captivating destination for tourists. From ancient monuments to bustling
+                        markets and a thriving culinary scene, Delhi offers something for everyone. </p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+            <div class="bg-sky-50 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                <img src="./malaysia.avif" alt="Andaman Islands"
+                    class="w-full h-52 object-cover rounded-t-xl cursor-pointer">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl text-emerald-600">Malaysia</h3>
+                    <p class="text-sm mt-1">From bustling cities to serene beaches and lush rainforests, Malaysia
+                        provides a blend of adventure and relaxation. Visitors can explore ancient historical sites,
+                        indulge in vibrant street food, or immerse themselves in the country's.</p>
+                </div>
+                <div class="text-center mt-5 py-4">
+                    <button id="viewMoreBtn"
+                        class="bg-emerald-600 hover:bg-white text-white hover:text-emerald-600 border-2 border-emerald-600 px-6 py-2 rounded-lg text-sm transition">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <!--footer  -->
+    <footer class=" container-fluid bg-teal-700 p-5 ">
+        <div class="md:grid grid-cols-4 ps-20">
+            <div class="p-2 text-white text-xl">
+
+                <ul class="unstyled">
+                    <img src="./WhatsApp_Image_2025-06-10_at_19.10.29-removebg-preview.png" alt="" class="w-7">
+                    <p class="text-amber-200">Leisure Guru</p>
+                    <li>5th floor,Topaz towers</li>
+                    <li>Kakkanad, Kerala</li>
+                </ul>
+            </div>
+            <div class="p-3">
+                <p class="text-white text-sm ">INFO</p>
+                <ul class="unstyled text-white mt-2">
+                    <li>Blog</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+
+                </ul>
+            </div>
+            <div class="p-3">
+                <P class="text-white text-sm  ">CONNECT WITH US</P>
+                <p class="text-white mt-2 ">
+                    <i class="fa-brands fa-facebook me-5 "></i>
+                    <i class="fa-brands fa-instagram me-5"></i>
+                    <i class="fa-brands fa-whatsapp me-5"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </p>
+            </div>
+
+            <div class="p-2">
+                <P class="text-white text-sm ">FOR MORE DETAILS</P>
+                <ul class="unstyled justify-center text-white mt-2">
+                    <li>+91 9612345678</li>
+                    <li>+91 9845678962</li>
+                    <li>+91 9525876541</li>
+            </div>
+        </div>
+        <p class="text-sm text-center text-white ">©Copyright 2025 at Leisure Guru Pvt Ltd. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
